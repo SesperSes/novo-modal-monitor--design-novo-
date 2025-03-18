@@ -246,9 +246,9 @@
     <!-- <main-saida-principal></main-saida-principal> -->
 
     <!--MONITOR MODAL-->
-    <?php
+    <!-- <?php
     include "./monitor-modal.php"
-    ?>
+    ?> -->
 
     <script>
         function toggleMenu() {
