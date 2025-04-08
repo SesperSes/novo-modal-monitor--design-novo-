@@ -1,5 +1,3 @@
-<button class="botao-modal open-intervalo">Abrir Modal</button>
-
 <div class="fundo-intervalo">
     <section class="modal-intervalo">
         <img src="../../../public/img/img-modais/Logo Nota Controlnt.png" alt="Logo Nota Control" class="logo">

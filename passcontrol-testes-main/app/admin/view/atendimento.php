@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../../public/modais/Modal_Alterar_Dados_Pessoais/alterar_dados_pessoais.css">
     <link rel="stylesheet" href="../../../public/modais/Modal_Alterar_Senha/alterar_senha.css">
 
-    <link rel="stylesheet" href="../../../public/modais/Modal_Consultar_Fila/consultar-fila.css">
+    <link rel="stylesheet" href="../../../public/modais/Modal_Consultar_Fila/modal_consultar_fila.css">
     <link rel="stylesheet" href="../../../public/modais/Modal_Chamar_prox_senha/chamar_prox_senha.css">
     <link rel="stylesheet" href="../../../public/modais/Modal_Iniciar_Intervalo/iniciar_intervalo.css">
     <link rel="stylesheet" href="../../../public/modais/Modal_Encerrar_Atendimento/encerrar-atendimento.css">
@@ -32,12 +32,10 @@
     <script src="../../../public/js/modal_conf_saida.js" defer></script>
     <script src="../../../public/js/monitor-modal.js" defer></script>
 
-    <script src="../../../public/modais/Modal_Consultar_Fila/modal.js" defer></script>
+    <script src="../../../public/modais/Modal_Consultar_Fila/modal_consultar_fila.js" defer></script>
     <script src="../../../public/modais/Modal_Chamar_prox_senha/chamar_prox_senha.js" defer></script>
     <script src="../../../public/modais/Modal_Iniciar_Intervalo/iniciar_intervalo.js" defer></script>
     <script src="../../../public/modais/Modal_Encerrar_Atendimento/encerrar-atendimento.js" defer></script>
-
-
 
     <link rel="shortcut icon" type="imagex/png" href="../../../public/img/Logo-Nota-Controlnt.ico">
 </head>
@@ -45,9 +43,6 @@
 <body class="control-body-navegacao">
     <?php
     include "./navegacao.php";
-
-    //MODAL CONSULTAR FILA
-    // include "../../../public/modais/Modal Consultar Fila/index.php"
     ?>
 
     <section class="Area-Util-Projeto">
@@ -253,15 +248,10 @@
         </nav>
         </div>
     </section>
-    
-    <!-- <main-tela-de-login></main-tela-de-login> -->
-    <!-- <main-proxima-senha></main-proxima-senha> -->
-    <!-- <main-sair-sistema></main-sair-sistema> -->
-    <!-- <main-saida-principal></main-saida-principal> -->
 
     <?php
     include "./monitor-modal.php"; 
-    include "../../../public/modais/Modal_Consultar_Fila/index.php";
+    include "../../../public/modais/Modal_Consultar_Fila/modal_consultar_fila.php";
     include "../../../public/modais/Modal_Chamar_prox_senha/chamar_prox_senha.php"; 
     include "../../../public/modais/Modal_Iniciar_Intervalo/iniciar_intervalo.php";
     include "../../../public/modais/Modal_Encerrar_Atendimento/encerrar-atendimento.php";

@@ -15,9 +15,7 @@
             </select>
         </div>
         <div class="button-group">
-            <button class="botao-modal confirm">Confirmar</button>
+            <button class="botao-modal confirm_SelecaoGuiche">Confirmar</button>
         </div>
     </section>
 </div>
-
-<script src="./selecao_guiche.js" defer></script>
