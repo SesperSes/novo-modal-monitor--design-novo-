@@ -5,10 +5,10 @@
 
 class Database {
     private $conn;
-    private string $local = 'localhost';
-    private string $db = 'passcontrol';
-    private string $user = 'root';
-    private string $password = '';
+    private string $local = '192.168.22.9';
+    private string $db = 'passcontrol' ;
+    private string $user = 'fabrica32';
+    private string $password = 'fabrica2025';
     private $table;
 
     // O construtor garante que a conexão seja realizada assim que o objeto Database for instanciado
@@ -21,8 +21,6 @@ class Database {
         try{
             $this->conn = new PDO("mysql:host=".$this->local.";dbname=$this->db",$this->user,$this->password);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            // adição do return
-            return $this->conn;
             // echo "Conectado com sucesso";
         }catch(PDOException $err){
             die("Connection Failed". $err->getMessage());
