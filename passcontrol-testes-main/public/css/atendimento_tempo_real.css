@@ -14,7 +14,7 @@
 
 .area-atendimento-tempo-real {
     height: 100vh;
-    margin: 30px 30px 30px 30px;
+    margin: 80px 30px 30px 30px;
     background-color: var(--color-background-3);
 }
 
@@ -38,6 +38,7 @@
     font-weight: bold;
     font-size: 20px;
     color: var(--color-text-1);
+    margin-top: 30px;
 }
 
 .table-atendimento-tempo-real {
@@ -81,7 +82,7 @@ thead, tbody tr {
 
 tbody { 
     display: block; 
-    max-height: 60vh; 
+    max-height: 54vh; 
     overflow-y: scroll;  
     position: relative; 
 

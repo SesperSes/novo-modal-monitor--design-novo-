@@ -8,8 +8,7 @@ class Usuario {
     private $db;
 
     public function __construct() {
-        $this->db = new Database();
-        $this->db->table = 'usuarios';  // Definindo a tabela ao instanciar
+        $this->db = new Database('usuarios');
     }
 
     public function cadastrar($nome) {
@@ -23,15 +22,12 @@ class Usuario {
     
         if ($res) {
             // Se o login foi bem-sucedido, redireciona para a página de atendimento
-            header("Location: app/admin/view/atendimento.php");
+            header("Location: ./app/admin/view/atendimento.php");
             exit(); // Sempre use exit() após header() para garantir que o código não continue a ser executado
         } else {
             return false; // Caso contrário, retorna false
         }
     }
-    
-    
-
 }
 
 $db = new Database('usuario');
