@@ -54,33 +54,25 @@
             }
         </script>
         <!-- área da descrição da página de navegação  -->
-        <div class="descricao">
-            <!-- <h2>Menu de Gestão</h2> -->
-
-            <!-- <p>Área de Gestão do Admimistrador.</p> -->    
-        </div>
         <!-- área dos cards de nevegação  -->
         <main class="area-cards">
             <div class="container_menu">
                 <div class="wrapper">
                     <a href="">
                         <div class="banner-img">
-                            <!-- <img src="../../../public/img/img-menu/gestaodoautoatendimento.png" alt=""> -->
                             <img src="../../../public/img/Menus/TotemPassControl.png" alt="">
                         </div>
                     </a>
-                    <!-- <h3 class="titulo-card">Autoatendimento</h3> -->
-                    <!-- <p>Gestão do Autoatendimento.</p> -->
                 </div>
                 <div class="button-wrapper">
-                    <button class="btn outline" onclick="window.location.href='';">Visualizar Autoatendimento</button>
+                    <button class="btn outline" onclick="window.location.href='../../usuario/view/tela_autoatendimentoPage1.php';">Visualizar Autoatendimento</button>
                 </div>
             </div>
             <div class="container_menu">
                 <div class="wrapper">
                     <a href="./monitor-modal.php">
                         <div class="banner-img">
-                            <img src="../../../public/img/img-menu/visualizaçaomonitordeautoatendimento.png" alt="">
+                            <img src="../../../public/img/img-menu/monitor.png" alt="">
                             <!-- <img src="../../../public/img/Menus/MONITOR.png" alt=""> -->
 
                         </div>
@@ -99,6 +91,6 @@
     <?php
     include "./monitor-modal.php";
     ?>
+    
 </body>
-
-</html>i
+</html>

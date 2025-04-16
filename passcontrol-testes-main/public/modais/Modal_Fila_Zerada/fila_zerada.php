@@ -7,8 +7,7 @@
 
         <p class="texto"><b>No Momento a Fila Está Vazia, Aguarde Novas Senhas!</b></p>
         <div class="button-group">
-            <button class="botao-modal voltar">Fechar</button>
+            <button class="botao-modal voltar_FilaZerada">Fechar</button>
         </div>
     </section>
 </div>
-<script src="./fila_zerada.js" defer></script>

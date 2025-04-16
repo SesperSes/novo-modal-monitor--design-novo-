@@ -1,4 +1,4 @@
-.area-tabela{
+/* .area-tabela{
   width: 90%;
   background-color: rgb(255, 255, 255,0.4);
   gap: 15px;
@@ -6,7 +6,7 @@
   padding: 1.875rem;
   display: flex;
   height: 70%;
-}
+} */
 
  .sub-area-tabela {
   height: 100%; 
@@ -47,10 +47,22 @@ th {
   align-items: center;
 }
 
-.editar a img:hover{
+.openEditar{
+  cursor: pointer;
+  display: inline;
+  background: none;
+  border: none;
+}
+.openEditarServ{
+  cursor: pointer;
+  display: inline;
+  background: none;
+  border: none;
+}
+.editar button:hover img{
   content: url(../../public/img/icons/Group\ 2925.png);
-  transition: 1s;
-  cursor:pointer;
+  transition: 0.2s;
+  border-radius: 5px;
 }
 
 .ativarswitch{
@@ -108,37 +120,172 @@ input:checked + .slider:before {
 input:focus + .slider {
   box-shadow: 0 0 1px #4CAF50;
 }
+.toggle-btn {
+  width: 60px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid var(--cinza-control);
+  cursor: pointer;
+}
 
-/* .sub-area-tabela tbody::-webkit-scrollbar { 
+.toggle-btn.active .circulo {
+  left: 2px;
+  background-color: #ff0000;
+}
+
+.toggle-btn .circulo {
+  position: absolute;
+  top: 2px;
+  left: 37px;
+  width: 18px;
+  height: 15px;
+  border-radius: 50%;
+  transition: left 0.3s;
+  background-color: #4CAF50;
+}
+.editar-inativar-menor{
+  width: 70px;
+}
+.area-tabela{ 
+  width: 90%; 
+  font-weight: 600; 
+  border-radius: 5px; 
+  background-color: rgb(255, 255, 255,0.5); 
+  gap: 15px; 
+  margin-top: 2rem; 
+  display: flex; 
+  display: block; 
+  justify-content: left; 
+} 
+.tabela {
+  border-collapse: collapse; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  width: 96%; 
+  margin: 1.5vw; 
+  max-height: 100px; 
+  position: relative; 
+  overflow-x: auto;
+  transition: overflow 0.3s ease;  
+  border-spacing: 0;
+} 
+.tabela {
+  /* border: 0.5px solid black; */
+  border-collapse: separate;
+  background-color: rgb(255, 255, 255,0.4);
+
+}
+.tabela:hover { 
+  overflow-y: auto;  
+} 
+.tabela th { 
+  background-color: var(--cinza-control); 
+  color: var(--cor-fundo); 
+} 
+th { 
+  position: sticky; 
+  top: 0; 
+  background-color: #f4f4f4; 
+  z-index: 2; 
+  padding: 10px; 
+  text-align: left; 
+  border: 1px solid black; 
+  min-width: 50px; 
+
+} 
+td { 
+  font-size: 16px;
+  border: 1px solid black; 
+  padding: 9px; 
+  text-align: left; 
+  min-width: 50px; 
+  color: var(--cinza-control); 
+} 
+td, th {
+  width: calc(+140px);
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;  
+  width: 200px;              
+}
+thead, tbody tr { 
+  display: table; 
+  width: 100%; 
+  table-layout: fixed; 
+} 
+tbody { 
+  display: block;  
+  overflow-y: scroll;  
+  position: relative;
+  height: 300px; 
+
+} 
+.tabela tbody::-webkit-scrollbar { 
   width: 0.1px; 
   opacity: 0;  
   transition: opacity 0.3s ease;  
 } 
-.sub-area-tabela:hover tbody::-webkit-scrollbar { 
+.tabela:hover tbody::-webkit-scrollbar { 
   opacity: 1;  
-  width: 9px; 
+  width: 5px; 
 } 
-.sub-area-tabela tbody::-webkit-scrollbar-thumb { 
+.tabela tbody::-webkit-scrollbar-thumb { 
   background-color: rgba(0, 0, 0, 0.5); 
   border-radius: 4px;
 
 } 
-.sub-area-tabela tbody::-webkit-scrollbar-track { 
+.tabela tbody::-webkit-scrollbar-track { 
   background: transparent; 
 } 
 
-.sub-area-tabela tbody::-webkit-scrollbar-thumb:hover { 
+.tabela tbody::-webkit-scrollbar-thumb:hover { 
   background-color: rgba(0, 0, 0, 0.7); 
-  width: 9px; 
+  width: 5px; 
 } 
 
-.sub-area-tabela:hover tbody,thead{ 
-  margin-right: -9px;
-  /* display: flex; 
-}*/
+.tabela:hover tbody,thead{ 
+  margin-right: -5px;
+} 
 
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed; 
+}
 
-
+.botao-voltar, .botao-cadastro {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 7rem;
+  margin-top: 15px;
+}
+.botoesVoltar-Cadastrar{
+  width: 90%;
+  height: 8%;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  bottom: -0.625;
+  gap: 1rem;
+}
+.botao-voltar {
+  background-color: var(--cinza-control);
+  color: #fff;
+}
+.botao-cadastro {
+  background-color: var(--cinza-control);
+  color: #fff;
+}
+.botao-cadastro:hover {
+  color: #3AA867;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
 
 
 

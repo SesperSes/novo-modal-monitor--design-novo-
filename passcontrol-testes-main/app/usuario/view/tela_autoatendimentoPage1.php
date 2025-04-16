@@ -3,7 +3,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 
     <title>PassControl</title> 
     
@@ -23,7 +25,9 @@
     <header class="head">
         <nav class="nav-head">
             <div class="logo-control">
+                <a href="../../../app/admin/view/menuadm_autoatendimento.php">
                 <img src="../../../public/img/icons/logo control.svg" alt="LOGOCONTROL" id="img-logo">
+                </a>
             </div>
             <h3>PassControl</h3>
         </nav>

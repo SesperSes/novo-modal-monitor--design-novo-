@@ -8,7 +8,7 @@
         <div class="inf-modal-ponto-atendimento">
             <div class="container-ponto-atendimento">
                 <label class="label-ponto-atendimento"><b>Nome do Ponto de Atendimento</b></label>
-                <input type="text" class="input-text-ponto-atendimento" placeholder="Ex: Guichê, Baia, IPTU...">
+                <input type="text" class="input-text-ponto-atendimento" placeholder="Ex: Guichê, Caixa, IPTU...">
             </div>
         </div>
         <div class="servico-ponto-atendimento">
@@ -16,9 +16,8 @@
             <input type="text" class="input-text-ponto-atendimento" placeholder="Ex: 01, 02...">
         </div>
         <div class="button-group-ponto-atendimento">
-            <button class="botao-modal-ponto-atendimento cancel">Voltar</button>
-            <button class="botao-modal-ponto-atendimento save">Salvar</button>
+            <button class="botao-modal-ponto-atendimento cancel_CadPontoAtend">Voltar</button>
+            <button class="botao-modal-ponto-atendimento save_CadPontoAtend">Salvar</button>
         </div>
     </section>
 </div>
-<script src="./cadastro_ponto_atendimento.js" defer></script>
